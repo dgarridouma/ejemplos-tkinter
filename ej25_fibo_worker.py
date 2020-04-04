@@ -43,7 +43,7 @@ class Aplicacion:
         else:
                 fib0 =  1
                 fib1 = 1
-                for i in range(2,num+1):
+                for _ in range(2,num+1):
                   tmp = fib0 + fib1
                   fib0 = fib1
                   fib1 = tmp
@@ -80,10 +80,11 @@ class Worker(threading.Thread):
         try:
             if self.num<2:
                 res = 1
+                self.queue.put(str(res))
             else:
                 fib0 =  1
                 fib1 = 1
-                for i in range(2,self.num+1):
+                for _ in range(2,self.num+1):
                   tmp = fib0 + fib1
                   fib0 = fib1
                   fib1 = tmp
