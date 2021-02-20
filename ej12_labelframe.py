@@ -17,11 +17,11 @@ class Aplicacion:
         self.label1.grid(column=0, row=0, padx=4, pady=4)
         self.entry1=ttk.Entry(self.labelframe1)
         self.entry1.grid(column=1, row=0, padx=4, pady=4)
-        self.label2=ttk.Label(self.labelframe1, text="Ingrese clave:")        
+        self.label2=ttk.Label(self.labelframe1, text="Introduzca clave:")        
         self.label2.grid(column=0, row=1, padx=4, pady=4)
         self.entry2=ttk.Entry(self.labelframe1, show="*")
         self.entry2.grid(column=1, row=1, padx=4, pady=4)
-        self.boton1=ttk.Button(self.labelframe1, text="Ingresar")
+        self.boton1=ttk.Button(self.labelframe1, text="Confirmar")
         self.boton1.grid(column=1, row=2, padx=4, pady=4)
 
     def operaciones(self):

@@ -4,7 +4,7 @@ class Aplicacion:
     def __init__(self):
         self.ventana1=tk.Tk()
 
-        self.label1=tk.Label(text="Ingrese un número:")
+        self.label1=tk.Label(text="Introduzca un número:")
         self.label1.grid(column=0, row=0)
         
         self.dato=tk.StringVar()

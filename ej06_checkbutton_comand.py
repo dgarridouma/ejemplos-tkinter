@@ -6,7 +6,7 @@ class Aplicacion:
         self.seleccion=tk.IntVar()
         self.check1=tk.Checkbutton(self.ventana1,text="¿Está de acuerdo con los términos y condiciones?", variable=self.seleccion, command=self.cambiarestado)
         self.check1.grid(column=0, row=0)
-        self.boton1=tk.Button(self.ventana1, text="Entrar", state="disabled", command=self.ingresar)
+        self.boton1=tk.Button(self.ventana1, text="Entrar", state="disabled", command=self.confirmar)
         self.boton1.grid(column=0, row=1)        
         self.ventana1.mainloop()
 
@@ -16,7 +16,7 @@ class Aplicacion:
         if self.seleccion.get()==0:
             self.boton1.configure(state="disabled")
 
-    def ingresar(self):
-        self.ventana1.title("Ingresando...")
+    def confirmar(self):
+        self.ventana1.title("Conectando...")
 
 aplicacion1=Aplicacion()

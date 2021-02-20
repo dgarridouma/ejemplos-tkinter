@@ -25,13 +25,13 @@ class DialogoTamano:
 
     def __init__(self, ventanaprincipal):
         self.dialogo=tk.Toplevel(ventanaprincipal)
-        self.label1=ttk.Label(self.dialogo, text="Ingrese ancho:")
+        self.label1=ttk.Label(self.dialogo, text="Indique ancho:")
         self.label1.grid(column=0, row=0, padx=5, pady=5)
         self.dato1=tk.StringVar()
         self.entry1=ttk.Entry(self.dialogo, textvariable=self.dato1)
         self.entry1.grid(column=1, row=0, padx=5, pady=5)
         self.entry1.focus()
-        self.label2=ttk.Label(self.dialogo, text="Ingrese alto:")
+        self.label2=ttk.Label(self.dialogo, text="Indique alto:")
         self.label2.grid(column=0, row=1, padx=5, pady=5)
         self.dato2=tk.StringVar()
         self.entry2=ttk.Entry(self.dialogo, textvariable=self.dato2)
