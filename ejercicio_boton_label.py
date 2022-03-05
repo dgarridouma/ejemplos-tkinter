@@ -25,7 +25,7 @@ class Aplicacion:
 
     def incrementar(self):
         self.valor=self.valor+1
-        self.label1.config(text=self.valor)
+        self.label1.configure(text=self.valor)
         self.comprobar_color()
         # self.label1["text"]=self.valor
 
